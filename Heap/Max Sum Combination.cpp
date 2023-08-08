@@ -1,6 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem link:https://www.interviewbit.com/problems/maximum-sum-combinations/
+
+
+// Approach :
+
+// ? Naive: if we insert all pairs then take best C pair : TC O(n^2);
+
+// ? Optimal: 
+// 1. sorted both the array in reverse order because we want the maximum sum
+// 2. at every index the maximum element could be either (i+1,j) or (i,j+1);
+// 3. we are pushing both the elements in the pq
+// 4. maintaining a set so that to prevent repetition
+// 5. since C elements are required so repeating this process C times.
 
 vector<int>solve(vector<int> &A, vector<int> &B, int C)
 {

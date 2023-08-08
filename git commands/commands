@@ -1,0 +1,41 @@
+git log => to see all the commits.
+
+
+git checkout <hashCode> of commit  // to checkout on a particular commit.
+for returning - git checkout master.
+
+git branch => this will show all the branches
+
+git branch branch_name // to create a new branch
+git checkout branch_name // to switch on a particular branch.
+			OR
+git ckeckout -b <branch_name> // this will create as well as switch on that branch
+
+Merge:
+
+git merge <branch_name> => this will merge the branch_name with the curr branch in which we are .
+
+
+Push code on github
+
+git push <branch_name> // this will push code on a particular branch 
+
+
+Rebase:
+
+suppose we are working on a branch and want to merge it in some other branch but don't want some 
+commits then
+
+1.commit your changes
+2.git rebase <branch_name>
+3.resolve conflicts
+4.git rebase --continue
+5.commit changes
+6.checkout branch and merge
+
+
+
+
+
+
+
