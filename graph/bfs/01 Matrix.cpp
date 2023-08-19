@@ -4,6 +4,15 @@ using namespace std;
 
 //Problem:https://leetcode.com/problems/01-matrix/description/
 
+
+//Approach : here bfs from 0 is important to avoid tle.
+
+//Brute force: search a one , put bfs on it then find distance using bfs.
+
+// but here we visit one block multiple times , therefore tle. 
+
+// so to avoid this we have put bfs from 0.
+
 class Solution {
 public:
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
