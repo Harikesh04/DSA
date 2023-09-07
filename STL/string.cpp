@@ -22,11 +22,13 @@ int main(int argc, char const *argv[])
 
 // //DELETION IN STRING
 
-// ! s.erase(s.begin()+2);
+// ! s.erase(0,3);
 
+   std::string str = "harikesh";
+    str.erase(4, 1); // Erase 1 character at index 4 (5th character)
 // s.pop_back();
 
-// ! s.erase(s.begin()+2,s.begin()+4);
+// ! s.erase(2,3);// erase 3 char starting from 2
 
 // //CLEAR THE STRING 
 
@@ -129,4 +131,17 @@ return 0;
     
 
 
+}
+
+
+
+int main(){
+
+    string s= "helloworld";
+
+    s.erase(1,3);// removing 3 char from index 1
+    cout<<s<<endl;
+
+
+    return 0;
 }
