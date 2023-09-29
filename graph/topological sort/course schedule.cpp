@@ -70,9 +70,9 @@ public:
 
         }
 
-       if(cnt==n)return true;
+       if(cnt==n)return true;// mtlb m saare node visit kr paya , yani no cycle
 
-       return false;
+       return false;// visit nii kr paya, yani cycle thi
 
 
 

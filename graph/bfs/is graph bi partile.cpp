@@ -27,7 +27,7 @@ public:
                 auto node = q.front();
                 q.pop();
                 for(auto v:graph[node]){
-                    if(colour[v]==-1){
+                    if(colour[v]==-1){// if adj node is not colored
                         colour[v]= 1-colour[node];//giving colour alter of the curr color of the node
                         q.push(v);//pushing the vertex in the queue
                     }
