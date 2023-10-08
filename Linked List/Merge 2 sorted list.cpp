@@ -44,7 +44,7 @@ public:
         if(l1==NULL)return l2;
         if(l2==NULL)return l1;
 
-        ListNode* ans = new ListNode();
+        ListNode* ans = new ListNode();// null node
         ListNode* ptr = ans;
 
         while(l1!=NULL && l2!=NULL){

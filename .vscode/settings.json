@@ -2,6 +2,8 @@
     "files.associations": {
         "*html": "html",
         "vector": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "__locale": "cpp",
+        "bitset": "cpp"
     }
 }
