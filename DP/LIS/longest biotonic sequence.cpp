@@ -17,7 +17,7 @@ int longestBitonicSequence(vector<int>& arr, int n) {
 	int inc=0,dec=0;
     
     for(int i=0; i<=n-1; i++){
-        for(int prev_index = 0; prev_index <=i-1; prev_index ++){
+        for(int prev_index = 0; prev_index <i; prev_index ++){
             
             if(arr[prev_index]<arr[i]){
                 dp1[i] = max(dp1[i], 1 + dp1[prev_index]);

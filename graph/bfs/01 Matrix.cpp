@@ -31,6 +31,7 @@ public:
                 }
             }
         }
+        // phle queue m saari 0 k indexes push kr diye aur kyuki voh khud hi zero h ans m unko 0 mark kr diye, ab unse bfs 
         
         vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
         
