@@ -19,7 +19,7 @@ public:
 
         while (!pq.empty())
         {
-            auto [dist, node] = pq.top();// correct node aur us tk distance
+            auto [dist, node] = pq.top();// current node aur us tk distance
             pq.pop();
 
             for (auto &it : adj[node])// current node k adj value node ko traverse krenge

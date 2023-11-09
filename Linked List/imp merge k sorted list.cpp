@@ -38,7 +38,7 @@ public:
     }
 
     ListNode* partitionAndMerge(int start,int end ,vector<ListNode*>& lists){
-        if(start==end)return lists[start];
+        if(start==end)return lists[start];// agr yek ki list ho tb
         if(start>end)return NULL;
 
         int mid = (start + end)/2;
@@ -47,7 +47,7 @@ public:
         ListNode* l2= partitionAndMerge(mid+1,end,lists);
 
         return mergeTwoSortedLists(l1,l2);
-
+;
     }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         if(lists.size()==0)return NULL;

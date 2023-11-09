@@ -22,14 +22,17 @@ public:
 
         vector<int> result;
 
-        // here we are storing index of elements in deque
+        // ! here we are storing index of elements in deque instead of element so that we keep only those element which are in the current window
         
         for(int i = 0; i<n; i++) {
-            //remove the max elements from front which are out of window size
+            //un elements ko hta rhe h jo ki current window m lie nii krte 
             while(!deq.empty() && deq.front() <= i-k)
                 deq.pop_front();
             
             //we maintain the deque in descending order
+            // agr curr element bda h toh jitne bhi usse chote element h uske pehle unko hta denge kyuki voh kbhi bhi ans nii ho skte 
+
+            // 1 2 10  // here 1 and 2 can never be our ans so , we will remove it if they are in deque
             while(!deq.empty() && nums[i] > nums[deq.back()])
                 deq.pop_back();
             

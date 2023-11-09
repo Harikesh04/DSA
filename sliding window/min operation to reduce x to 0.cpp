@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// #problem:https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/
+// #problem:https://leetcode.com/proble ms/minimum-operations-to-reduce-x-to-zero/description/
 
 // ? will give tle due to O(n^2)
 // class Solution {

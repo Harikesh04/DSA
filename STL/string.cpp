@@ -51,20 +51,19 @@ int main(int argc, char const *argv[])
 //    if(n==string :: npos)
 //     cout<<" NOT FOUND"<<endl;
 
-
-// //SUBSTRING FUN IN STRING
+ //SUBSTRING FUN IN STRING
 
  // ! s.substr(intitial_pos,length_of_the_substr_req);(here iterator is not required)
 
-// //if initial position nothing passed then it will take begining of the string
-// //if length_of_the_substr_req is not passed it will take default as the string length after the initial position
+ //if initial position nothing passed then it will take begining of the string
+//if length_of_the_substr_req is not passed it will take default as the string length after the initial position
 
 // cout<<s.substr(3,3);
 
  
 
 
-// //VECTOR OF STRING {FOR MATRIX TYPE PROBLEM}
+ //VECTOR OF STRING {FOR MATRIX TYPE PROBLEM}
 //    vector<string> v(8);
 //     for(int i= 0 ;i<8; i++) cin>>v[i];
 //     for(int i = 1; i<7; i++)
